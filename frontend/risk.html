@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Climate Risk Prediction</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body class="dashboard-body">
+
+    <div class="container">
+
+        <h1 class="dashboard-title">
+            AI Risk Prediction
+        </h1>
+
+        <div class="risk-grid">
+
+            <div class="risk-card">
+
+                <h2>🌧 Rainfall Risk</h2>
+
+                <p id="rainRisk">
+                    Loading...
+                </p>
+
+                <small>
+                    Prediction:
+                    <span id="rainValue">
+                        --
+                    </span>
+                </small>
+
+            </div>
+
+            <div class="risk-card">
+
+                <h2>⛈ Storm Risk</h2>
+
+                <p id="stormRisk">
+                    Loading...
+                </p>
+
+                <small>
+                    Prediction:
+                    <span id="stormValue">
+                        --
+                    </span>
+                </small>
+
+            </div>
+
+            <div class="risk-card">
+
+                <h2>🔥 Heatwave Risk</h2>
+
+                <p id="heatRisk">
+                    Loading...
+                </p>
+
+                <small>
+                    Prediction:
+                    <span id="heatValue">
+                        --
+                    </span>
+                </small>
+
+            </div>
+
+        </div>
+
+        <div class="alert-box">
+
+            <h2>
+                Climate Alert
+            </h2>
+
+            <p id="alertText">
+
+                Waiting for prediction...
+
+            </p>
+
+        </div>
+
+        <a href="/dashboard">
+
+            <button class="back-btn">
+
+                ← Back to Dashboard
+
+            </button>
+
+        </a>
+
+    </div>
+
+    <script src="/script.js"></script>
+<!-- AI WEATHER ASSISTANT -->
+
+<div class="assistant-container">
+
+    <div class="assistant-box">
+
+        <h1>🤖 AI Climate Assistant</h1>
+
+        <input
+            type="text"
+            id="assistantInput"
+            placeholder="Ask about weather, rainfall, storms..."
+        >
+
+        <button onclick="askAssistant()">
+            Ask AI
+        </button>
+
+        <div
+            id="assistantResponse"
+            class="ai-response"
+        >
+
+            Ask a question about climate risks.
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

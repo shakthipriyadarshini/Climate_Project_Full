@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Climate Dashboard</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body class="dashboard-body">
+
+    <div class="container">
+
+        <h1 class="dashboard-title">
+            Climate Dashboard
+        </h1>
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Search city..."
+            >
+
+             <button
+        class="locate-btn"
+        onclick="getCurrentLocation()"
+    >
+        📍locate me 
+    </button>
+
+
+            <button onclick="getWeather()">
+                Analyze
+            </button>
+
+        </div>
+
+        <!-- WEATHER CARDS -->
+
+        <div class="weather-grid">
+
+            <div class="card">
+                <h2>🌡 Temperature</h2>
+                <p id="temp">-- °C</p>
+            </div>
+
+            <div class="card">
+                <h2>💧 Humidity</h2>
+                <p id="humidity">-- %</p>
+            </div>
+
+            <div class="card">
+                <h2>🌬 Wind Speed</h2>
+                <p id="wind">-- km/h</p>
+            </div>
+
+            <div class="card">
+                <h2>🌍 Pressure</h2>
+                <p id="pressure">-- mb</p>
+            </div>
+
+            <div class="card">
+                <h2>☁ Weather</h2>
+                <p id="weather">--</p>
+            </div>
+
+            <div class="card">
+                <h2>📍 City</h2>
+                <p id="cityname">--</p>
+            </div>
+
+        </div>
+
+        <!-- FORECAST HEADER -->
+
+        <div class="forecast-header">
+
+            <h1 class="forecast-title">
+                7 Days Forecast
+            </h1>
+
+            <a href="/risk">
+
+                <button class="risk-btn">
+                    Risk Prediction
+                </button>
+
+            </a>
+
+        </div>
+
+        <!-- DYNAMIC FORECAST CARDS -->
+
+        <div
+            id="forecastContainer"
+            class="forecast-grid"
+        >
+
+        </div>
+
+        <!-- TREND ANALYSIS -->
+
+        <h1 class="trend-title">
+
+            Trend Analysis
+
+        </h1>
+
+        <div class="chart-container">
+
+            <canvas id="myChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>

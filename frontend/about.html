@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Climate Prediction System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.about-page{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.8)),
+    url("WhatsApp Image 2026-06-11 at 12.42.32 PM.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:white;
+
+    padding:50px;
+}
+
+.about-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    background:rgba(0,0,0,0.55);
+
+    backdrop-filter:blur(10px);
+
+    padding:50px;
+
+    border-radius:25px;
+}
+
+.about-title{
+
+    font-size:65px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.about-text{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+}
+
+.section-title{
+
+    font-size:40px;
+
+    margin-top:40px;
+
+    margin-bottom:20px;
+
+    color:#27c7ff;
+}
+
+.feature-list{
+
+    font-size:22px;
+
+    line-height:2;
+}
+
+.tech-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:30px;
+}
+
+.tech-card{
+
+    background:rgba(255,255,255,0.1);
+
+    padding:25px;
+
+    border-radius:20px;
+}
+
+.tech-card h3{
+
+    color:#27c7ff;
+
+    margin-bottom:15px;
+}
+
+.back-btn{
+
+    margin-top:50px;
+
+    padding:18px 40px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#27c7ff;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .about-title{
+
+        font-size:45px;
+    }
+
+    .section-title{
+
+        font-size:30px;
+    }
+
+    .about-text,
+    .feature-list{
+
+        font-size:18px;
+    }
+
+    .tech-grid{
+
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+
+</head>
+
+<body class="about-page">
+
+<div class="about-container">
+
+<h1 class="about-title">
+About Our Project
+</h1>
+
+<p class="about-text">
+
+Climate Prediction System is a web-based application developed to monitor weather conditions and provide climate risk insights in a simple and interactive way.
+
+The project combines real-time weather information, data analysis, and machine learning techniques to help users understand possible environmental risks such as rainfall, storms, and heatwaves.
+
+Users can search for any city and instantly view current weather conditions, future forecasts, climate trends, and risk assessments through an easy-to-use dashboard.
+
+</p>
+
+<h2 class="section-title">
+Project Overview
+</h2>
+
+<p class="about-text">
+
+Weather and climate play an important role in everyday life. Sudden changes in temperature, rainfall, or extreme weather events can affect agriculture, transportation, public safety, and daily activities.
+
+This project was developed to demonstrate how modern technologies such as Artificial Intelligence, Machine Learning, and Weather APIs can be combined to create a climate monitoring platform capable of providing useful environmental insights.
+
+</p>
+
+<h2 class="section-title">
+Key Features
+</h2>
+
+<div class="feature-list">
+
+<ul>
+
+<li>Real-time weather monitoring for any city.</li>
+
+<li>Current temperature, humidity, pressure, and wind speed information.</li>
+
+<li>Climate risk analysis for rainfall, storms, and heatwaves.</li>
+
+<li>Multi-day weather forecast visualization.</li>
+
+<li>Interactive trend analysis graphs.</li>
+
+<li>Climate chatbot for answering weather-related questions.</li>
+
+<li>User-friendly and responsive dashboard interface.</li>
+
+</ul>
+
+</div>
+
+<h2 class="section-title">
+Technologies Used
+</h2>
+
+<div class="tech-grid">
+
+<div class="tech-card">
+
+<h3>Frontend</h3>
+
+<p>
+
+HTML<br>
+CSS<br>
+JavaScript
+
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<h3>Backend</h3>
+
+<p>
+
+Python<br>
+Flask
+
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<h3>Machine Learning</h3>
+
+<p>
+
+TensorFlow<br>
+Keras<br>
+LSTM Neural Network<br>
+NumPy<br>
+Pandas<br>
+Scikit-Learn
+
+</p>
+
+</div>
+
+<div class="tech-card">
+
+<h3>Weather APIs</h3>
+
+<p>
+
+OpenWeatherMap API<br>
+Open-Meteo API
+
+</p>
+
+</div>
+
+</div>
+
+<h2 class="section-title">
+Machine Learning Approach
+</h2>
+
+<p class="about-text">
+
+The prediction component of this project is based on an LSTM (Long Short-Term Memory) neural network model. LSTM models are commonly used for time-series forecasting because they can learn patterns from sequential data over time.
+
+Historical climate information is used to identify weather trends and generate predictions that help estimate future climate risks.
+
+</p>
+
+<h2 class="section-title">
+Project Objective
+</h2>
+
+<p class="about-text">
+
+The objective of this project is to create a practical climate monitoring system that provides meaningful weather insights and demonstrates the real-world application of Artificial Intelligence in environmental analysis.
+
+The platform aims to make climate information easier to understand through visualization, forecasting, and risk prediction tools.
+
+</p>
+
+<h2 class="section-title">
+Future Scope
+</h2>
+
+<ul class="feature-list">
+
+<li>City-specific climate forecasting.</li>
+
+<li>Flood and drought prediction systems.</li>
+
+<li>Integration with satellite weather data.</li>
+
+<li>Higher accuracy prediction models.</li>
+
+<li>Advanced AI climate assistant.</li>
+
+<li>Mobile application support.</li>
+
+<li>Personalized climate alerts and notifications.</li>
+
+</ul>
+
+<a href="/">
+
+<button class="back-btn">
+
+⬅ Back to Home
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+</html>
